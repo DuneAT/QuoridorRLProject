@@ -196,7 +196,7 @@ class QuoridorWorld(gym.Env):
             d = min(self.dist(2)[0])
             manha = self.grid_size - 1 - self.player_1[0]
             da = min(self.dist(1)[0])
-        return (10 -manh-2*d + 0.5*manha + da)
+        return (10  -2*d + da)
     
     def step(self, action):
         """ Compute the effect of the chosen action"""
